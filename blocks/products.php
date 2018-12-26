@@ -28,10 +28,10 @@
 							<?php echo rwmb_meta( 'meta-product-price' ); ?>
 						</div>
 						<div class="text-center">
-							<div class="my-btn-black text-uppercase">
+							<div class="my-btn-black text-uppercase pointer">
 								Заказать
 							</div>
-							<div class="my-btn-black text-uppercase">
+							<div class="my-btn-black text-uppercase pointer" data-toggle="modal" data-target="#ProductModal<?php the_id(); ?>">
 								Подробнее
 							</div>
 						</div>
@@ -41,3 +41,26 @@
 		</div>
 	</div>
 </section>
+
+<?php 
+  $custom_query = new WP_Query( array( 'post_type' => 'products', 'orderby' => 'menu_order' ) );
+  if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
+	<!-- Product Modal -->
+  <div class="modal fade" id="ProductModal<?php the_id(); ?>" tabindex="-1" role="dialog" aria-labelledby="ProductLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><?php the_title(); ?></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        	<p class="lead">
+        		<?php the_content(); ?>
+        	</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<?php endwhile; endif; ?>

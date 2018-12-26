@@ -9955,6 +9955,9 @@ h1 {
   font-size: 1rem;
   padding: 8px 30px; }
 
+.pointer {
+  cursor: pointer; }
+
 .svg-line svg {
   color: #ca3b37; }
 

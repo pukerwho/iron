@@ -39,7 +39,7 @@
 					<div class="whyus__review-text pt-4 mb-5">
 						"Первый раз сделал небольшой заказ, для пробы. Все устроило и после этого заказал крупную партию. Рекомендую!"
 					</div>
-					<div class="buybutton">Заказать сейчас</div>
+					<div class="buybutton pointer" data-toggle="modal" data-target="#nowModal">Заказать сейчас</div>
 				</div>
 			</div>
 		</div>
@@ -69,7 +69,7 @@
 					<div class="whyus__review-text pt-4 mb-5">
 						"С сервисом в Украине ситуация плачевная. Вечные выходные, праздники, задержки, хамство. Каждому знакомо. Но ребята из компании IronGroup положительно выделяются среди остальных. Проконсультировали, подсказали. Спасибо за вашу работу."
 					</div>
-					<div class="buybutton">Заказать сейчас</div>
+					<div class="buybutton pointer" data-toggle="modal" data-target="#nowModal">Заказать сейчас</div>
 				</div>
 			</div>
 			<div class="col-md-7">
@@ -115,7 +115,7 @@
 					<div class="whyus__review-text pt-4 mb-5">
 						"Подтверждаю! Нужно было срочно доставить большой объем арматуры. Утром заказал, после обеда уже все было доставлено!"
 					</div>
-					<div class="buybutton">Заказать сейчас</div>
+					<div class="buybutton pointer" data-toggle="modal" data-target="#nowModal">Заказать сейчас</div>
 				</div>
 			</div>
 		</div>
@@ -145,7 +145,7 @@
 					<div class="whyus__review-text pt-4 mb-5">
 						"Являюсь регулярным покупателем. Никогда не подводили, поэтому продолжаю заказывать у них. Кроме того, компания дает хорошие скидки, за что отдельное спасибо)"
 					</div>
-					<div class="buybutton">Заказать сейчас</div>
+					<div class="buybutton pointer" data-toggle="modal" data-target="#nowModal">Заказать сейчас</div>
 				</div>
 			</div>
 			<div class="col-md-7">
