@@ -30,7 +30,10 @@
 						<div class="text-center">
 							<div class="my-btn-black text-uppercase">
 								Заказать
-							</div>	
+							</div>
+							<div class="my-btn-black text-uppercase">
+								Подробнее
+							</div>
 						</div>
 					</div>
 				</div>

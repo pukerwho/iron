@@ -9671,9 +9671,9 @@ header {
   background-color: #000000;
   padding: 6rem 0rem; }
   #cheap .cheap-icon {
-    position: absolute;
+    /*position: absolute;
     right: 40px;
-    top: -20px; }
+    top: -20px;*/ }
   #cheap .cheap-img img {
     width: 100%;
     border: 10px solid #ffffff;
@@ -9996,6 +9996,9 @@ h1 {
 .right-15 {
   right: 15px; }
 
+.margin-0 {
+  margin: 0; }
+
 .svg-underline {
   position: absolute;
   bottom: -25px;
@@ -10130,8 +10133,10 @@ h1 {
   #timetobuy p {
     margin-bottom: 2rem; }
 
-  #terminator .terminator-grid {
-    -ms-grid-columns: 100%;
-    grid-template-columns: 100%; } }
+  #terminator {
+    background-position: 40%; }
+    #terminator .terminator-grid {
+      -ms-grid-columns: 100%;
+      grid-template-columns: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
