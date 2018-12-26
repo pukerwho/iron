@@ -9978,6 +9978,9 @@ h1 {
 .h-100vh {
   height: 100vh; }
 
+.inline-block {
+  display: inline-block; }
+
 .p-absolute {
   position: absolute; }
 
@@ -10004,6 +10007,9 @@ h1 {
 
   .mobile-show {
     display: block !important; }
+
+  h1 {
+    font-size: 48px; }
 
   header .logo {
     left: 15px;
@@ -10111,6 +10117,18 @@ h1 {
     -o-transition: transform 300ms ease;
     transition: transform 300ms ease;
     transition: transform 300ms ease, -webkit-transform 300ms ease; }
+
+  #cheap .col-md-6:first-of-type {
+    margin-bottom: 3rem; }
+
+  #timetobuy form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  #timetobuy p {
+    margin-bottom: 2rem; }
 
   #terminator .terminator-grid {
     -ms-grid-columns: 100%;
