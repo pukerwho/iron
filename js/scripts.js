@@ -9,10 +9,10 @@ $(function(){
 
   $(window).scroll(function(){
     var h_scroll = $(this).scrollTop();
-    if (h_scroll > 56) {
-      $('header').addClass('header__fixed')
+    if (h_scroll > 50) {
+      $('header').addClass('header-scroll')
     } else {
-      $('header').removeClass('header__fixed')
+      $('header').removeClass('header-scroll')
     }
   })
 
@@ -20,6 +20,15 @@ $(function(){
   if ($(document).width() > 960) {
     var mySwiperVideo = new Swiper ('.swiper-steps', {
       slidesPerView: 'auto',
+      spaceBetween: 30,
+      simulateTouch: true,
+      loop: false,
+    });
+  };
+  //SWIPER STEPS
+  if ($(document).width() < 960) {
+    var mySwiperVideoMobile = new Swiper ('.swiper-steps', {
+      slidesPerView: 1,
       spaceBetween: 30,
       simulateTouch: true,
       loop: false,

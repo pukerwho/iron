@@ -23,7 +23,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12 v-relative">
-          <div class="left-menu">
+          <div class="left-menu pc-show">
             <?php wp_nav_menu( array(
               'theme_location'  => '',
               'menu'            => 'Navigation', 
@@ -46,9 +46,17 @@
           <div class="logo">
             <img src="https://static.tildacdn.com/tild6364-3934-4430-a265-393536346164/iron-group-logo2.png" alt="">
           </div>
+          <div class="mobile-show p-absolute right-15">
+            <div class="toogle-menu"></div>
+            <div class="slide-menu">
+              <div class="menu">
+                Меню
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="right-menu">
+      <div class="right-menu pc-show">
         <div class="phone">
           <a href="tel:099-666-55-44">099-666-55-44</a>
         </div>
