@@ -50,9 +50,11 @@ function addAdminEditorStyle() {
 add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 function theme_name_scripts() {
     wp_enqueue_style( 'editor-style', get_stylesheet_directory_uri() . '/css/style.css' );
-    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js');
+    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js','','',true);
     wp_register_script( 'loadmore', get_stylesheet_directory_uri() . '/js/loadmore.js', array('jquery') );
- 
+    wp_enqueue_script( 'myscripts', get_template_directory_uri() . '/js/scripts.js','','',true);
+    wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.min.js','','',true);
+    wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/js/lightbox.min.js','','',true);
 
     wp_localize_script( 'loadmore', 'loadmore_params', array(
         'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', 
@@ -113,3 +115,74 @@ add_action("admin_menu", "add_theme_menu_item");
 function theme_settings_page() {
     include 'form-file.php';
 }
+
+function create_post_type() {
+    register_post_type( 'steps',
+        array(
+          'labels' => array(
+            'name' => __( 'Шаги' ),
+            'singular_name' => __( 'Шаг' )
+          ),
+          'public' => true,
+          'has_archive' => true,
+          'hierarchical' => true,
+          'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+        )
+    );
+    register_post_type( 'products',
+        array(
+          'labels' => array(
+            'name' => __( 'Товары' ),
+            'singular_name' => __( 'Товар' )
+          ),
+          'public' => true,
+          'has_archive' => true,
+          'hierarchical' => true,
+          'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+        )
+    );
+}
+add_action( 'init', 'create_post_type' );
+
+function your_prefix_get_meta_box( $meta_boxes ) {
+    $prefix = 'meta-';
+
+    $meta_boxes[] = array(
+        'id' => 'steps-info',
+        'title' => esc_html__( 'Информация', 'steps-info' ),
+        'post_types' => array( 'steps' ),
+        'context' => 'advanced',
+        'priority' => 'default',
+        'autosave' => true,
+        'fields' => array(
+          array(
+            'id' => $prefix . 'step-icon',
+            'type' => 'text',
+            'name' => esc_html__( 'Код иконки', 'steps-info' ),
+          ),
+          array(
+            'id' => $prefix . 'step-number',
+            'type' => 'text',
+            'name' => esc_html__( 'Шаг №', 'steps-info' ),
+          ),
+        ),
+    );
+
+    $meta_boxes[] = array(
+        'id' => 'products-info',
+        'title' => esc_html__( 'Информация', 'products-info' ),
+        'post_types' => array( 'products' ),
+        'context' => 'advanced',
+        'priority' => 'default',
+        'autosave' => true,
+        'fields' => array(
+          array(
+            'id' => $prefix . 'product-price',
+            'type' => 'text',
+            'name' => esc_html__( 'Цена', 'products-info' ),
+          ),
+        ),
+    );
+    return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'your_prefix_get_meta_box' );
