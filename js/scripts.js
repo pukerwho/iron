@@ -34,4 +34,7 @@ $(function(){
       loop: false,
     });
   };
+
+  //VIDEO
+  const players = Array.from(document.querySelectorAll('.player')).map(p => new Plyr(p));
 });

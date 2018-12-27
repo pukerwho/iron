@@ -9,7 +9,7 @@
 			<div class="col-md-7">
 				<div class="whyus__img">
 					<video poster="/path/to/poster.jpg" class="player" playsinline autoplay loop>
-					  <source src="https://cdn-b-east.streamable.com/video/mp4/io1k4.mp4?token=nBtZooEsbvf21BQqzmqlEA&expires=1545411743" type="video/mp4">
+					  <source src="<?php bloginfo('template_url'); ?>/videos/video1.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
 				</div>
@@ -75,7 +75,7 @@
 			<div class="col-md-7">
 				<div class="whyus__img">
 					<video poster="/path/to/poster.jpg" class="player" playsinline autoplay loop>
-					  <source src="https://cdn-b-east.streamable.com/video/mp4/io1k4.mp4?token=nBtZooEsbvf21BQqzmqlEA&expires=1545411743" type="video/mp4">
+					  <source src="<?php bloginfo('template_url'); ?>/videos/video1.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
 				</div>
@@ -85,7 +85,7 @@
 			<div class="col-md-7">
 				<div class="whyus__img">
 					<video poster="/path/to/poster.jpg" class="player" playsinline autoplay loop>
-					  <source src="https://cdn-b-east.streamable.com/video/mp4/io1k4.mp4?token=nBtZooEsbvf21BQqzmqlEA&expires=1545411743" type="video/mp4">
+					  <source src="<?php bloginfo('template_url'); ?>/videos/video1.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
 				</div>
@@ -151,7 +151,7 @@
 			<div class="col-md-7">
 				<div class="whyus__img">
 					<video poster="/path/to/poster.jpg" class="player" playsinline autoplay loop>
-					  <source src="https://cdn-b-east.streamable.com/video/mp4/io1k4.mp4?token=nBtZooEsbvf21BQqzmqlEA&expires=1545411743" type="video/mp4">
+					  <source src="<?php bloginfo('template_url'); ?>/videos/video1.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
 				</div>
