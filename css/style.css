@@ -10007,6 +10007,19 @@ h1 {
   bottom: -25px;
   left: 0; }
 
+.modal-body input {
+  width: 100%;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  border: 1px solid #dcdcdc;
+  padding: 15px 20px; }
+  .modal-body input:focus {
+    outline: none; }
+.modal-body form [type="submit"] {
+  width: 100%;
+  background-color: #2bb319;
+  color: #ffffff; }
+
 @-webkit-keyframes plyr-progress {
   to {
     background-position: 25px 0; } }
