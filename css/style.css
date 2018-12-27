@@ -11479,6 +11479,9 @@ a.plyr__control::after, a.plyr__control::before {
   #cheap .col-md-6:first-of-type {
     margin-bottom: 3rem; }
 
+  .product .my-btn-black {
+    margin-bottom: 1.5rem; }
+
   #timetobuy form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
