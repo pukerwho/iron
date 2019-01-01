@@ -12,7 +12,36 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<!-- PC VERSION -->
+		<div class="pc-show">
+			<div class="row">
+				<?php 
+	        $custom_query = new WP_Query( array( 'post_type' => 'steps', 'orderby' => 'menu_order' ) );
+	        if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
+	        <div class="col-md-4">
+	        	<div class="step-card mb-5" style="background: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-size: cover;">
+	      			<div class="step-bg"></div>
+	      			<div class="step-top d-flex mb-3">
+	      				<div class="step-icon mr-3">
+	      					<?php echo rwmb_meta( 'meta-step-icon' ); ?>
+	      				</div>
+	      				<div class="step-number">
+	      					<?php echo rwmb_meta( 'meta-step-number' ); ?>
+	      				</div>
+	      			</div>
+	      			<div class="step-title mb-3">
+	      				<?php the_title(); ?>	
+	      			</div>
+	      			<div class="step-content lead">
+	      				<?php the_content(); ?>
+	      			</div>
+	      		</div>
+	        </div>
+				<?php endwhile; endif; ?>
+			</div>
+		</div>
+		<!-- MOBILE VERSION -->
+		<div class="row mobile-show">
 			<div class="col-md-12">
 				<div class="swiper-container swiper-steps">
 			    <div class="swiper-wrapper">
