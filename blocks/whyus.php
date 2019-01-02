@@ -8,7 +8,7 @@
 		<div class="row align-items-center mb-5">
 			<div class="col-md-7">
 				<div class="whyus__img">
-					<video id="js-player" class="player1" muted loop>
+					<video id="js-player" class="player1" autoplay muted loop>
 					  <source src="<?php bloginfo('template_url'); ?>/videos/video2.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
@@ -293,7 +293,7 @@
 			<div class="col-md-7">
 				<div class="whyus__img">
 					<video class="player" autoplay muted loop>
-					  <source src="<?php bloginfo('template_url'); ?>/videos/video1.mp4" type="video/mp4">
+					  <source src="<?php bloginfo('template_url'); ?>/videos/video7.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
 				</div>
