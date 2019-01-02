@@ -3,7 +3,7 @@
 		<div class="row align-items-center">
 			<div class="col-md-6">
 				<div class="d-flex align-items-center mb-5">
-					<img src="http://d1cxtglzz1rb2m.cloudfront.net/emoji/SVG/94-robot-face-3.svg" alt="" width="54px" class="mr-3"> <h2 class="text-white margin-0">Почему так дешево?</h2>	
+					<img src="<?php bloginfo('template_url'); ?>/img/robot.svg" alt="" width="54px" class="mr-3"> <h2 class="text-white margin-0">Почему так дешево?</h2>	
 				</div>
 				<div class="scrollme">
 					<div 
@@ -15,7 +15,7 @@
 			      data-translatey="50"
 			    >
 						<div class="lead text-white pl-4">					
-							Мы работаем уже 25 лет и являемся эксклюзивными партнерами завод Арсенал-групп. Это позволяет нам держать цены ниже рыночных
+							На рынке с 2012 года. Работаем по прямому договору с заводом производителем Arcelol group
 						</div>
 					</div>
 				</div>
@@ -31,7 +31,7 @@
 				      data-easing="easeinout"
 				      data-rotatez="5"
 				    >
-							<img src="https://static.tildacdn.com/tild3837-3764-4163-a433-376565663233/slide-main-002.jpg" alt="">
+							<img src="<?php bloginfo('template_url'); ?>/img/happy-man.jpg" alt="">
 						</div>
 					</div>	
 				</div>

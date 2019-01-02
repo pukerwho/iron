@@ -9763,6 +9763,11 @@ header {
   #whyus .whyus__review-avatar {
     display: table-cell;
     vertical-align: middle; }
+    #whyus .whyus__review-avatar img {
+      width: 48px;
+      height: 48px;
+      -o-object-fit: cover;
+      object-fit: cover; }
   #whyus .whyus__review-text {
     border-top: 1px solid #d8d8d8;
     line-height: 1.71428571;

@@ -37,4 +37,9 @@ $(function(){
 
   //VIDEO
   const players = Array.from(document.querySelectorAll('.player')).map(p => new Plyr(p));
+  $.each( players, function(key) {
+    console.log(players[key].play());
+  });
+  // players.play();
+  // console.log(players)
 });

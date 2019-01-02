@@ -8,8 +8,8 @@
 		<div class="row align-items-center mb-5">
 			<div class="col-md-7">
 				<div class="whyus__img">
-					<video poster="/path/to/poster.jpg" class="player" playsinline autoplay loop>
-					  <source src="<?php bloginfo('template_url'); ?>/videos/video1.mp4" type="video/mp4">
+					<video poster="/path/to/poster.jpg" class="player" loop>
+					  <source src="<?php bloginfo('template_url'); ?>/videos/video2.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
 				</div>
@@ -22,21 +22,21 @@
 			      data-from="1"
 			      data-to="0"
 			      data-easing="easeinout"
-			      data-translatey="80"
+			      data-translatey="150"
 			    >
 						<div class="whyus__text mb-5">
 							<div class="whyus__text-title mb-4">
 								<img src="<?php bloginfo('template_url'); ?>/img/list.svg" alt="" width="30px">
-								Мы продаем оптом и в розницу
+								Низкие цены
 							</div>
 							<div class="whyus__text-description lead">
-								У нас вы можете купить, как в розницу, так и сделать оптовый заказ со скидкой.
+								Благодаря оптовым закупкам и за счет прямых поставок с заводов наши цены самые низкие в Харькове! 
 							</div>
 						</div>
 						<div class="whyus__review">
 							<div class="whyus__review-user mb-4">
 								<div class="whyus__review-avatar">
-									<img src="https://static.youdo.com/i/vpromo-landing/execs/3065257.jpg" alt="" class="rounded-circle mr-3">
+									<img src="<?php bloginfo('template_url'); ?>/img/ava-1.jpeg" alt="" class="rounded-circle mr-3">
 								</div>
 								<div class="whyus__review-name">
 									Александр
@@ -46,7 +46,7 @@
 								</div>	
 							</div>
 							<div class="whyus__review-text pt-4 mb-5">
-								"Первый раз сделал небольшой заказ, для пробы. Все устроило и после этого заказал крупную партию. Рекомендую!"
+								"Работаю с компанией полгода. Хорошие цены на ндл, менеджеры отличные, все проходит быстро и качественно по обслуживанию. Рекомендую"
 							</div>
 							<div class="buybutton pointer" data-toggle="modal" data-target="#nowModal">Заказать сейчас</div>
 						</div>
@@ -63,31 +63,31 @@
 			      data-from="1"
 			      data-to="0"
 			      data-easing="easeinout"
-			      data-translatey="80"
+			      data-translatey="150"
 			    >
 						<div class="whyus__text mb-5">
 							<div class="whyus__text-title mb-4">
-								<img src="<?php bloginfo('template_url'); ?>/img/24-hours.svg" alt="" width="30px">
-								Работаем 24 часа, без выходных
+								<img src="<?php bloginfo('template_url'); ?>/img/like.svg" alt="" width="30px">
+								Надежность и безопасность
 							</div>
 							<div class="whyus__text-description lead">
-								Вы можете в любой удобный для вас момент оформить заказ и мы сразу же к нему приступим.
+								У нас имеются сертификаты качества, предоставляем каждому покупателю. Также вы можете вернуть товар в течении 14 дней. 
 							</div>
 						</div>
 						<div class="whyus__review">
 							<div class="whyus__review-user mb-4">
 								<div class="whyus__review-avatar">
-									<img src="https://static.youdo.com/i/vpromo-landing/execs/3065257.jpg" alt="" class="rounded-circle mr-3">
+									<img src="<?php bloginfo('template_url'); ?>/img/ava-2.jpeg" alt="" class="rounded-circle mr-3">
 								</div>
 								<div class="whyus__review-name">
-									Евгений
+									Юлия
 								</div>
 								<div class="whyus__review-who">
-									Купил 20 кг
+									Купила 20 кг
 								</div>	
 							</div>
 							<div class="whyus__review-text pt-4 mb-5">
-								"С сервисом в Украине ситуация плачевная. Вечные выходные, праздники, задержки, хамство. Каждому знакомо. Но ребята из компании IronGroup положительно выделяются среди остальных. Проконсультировали, подсказали. Спасибо за вашу работу."
+								"Очень даже хорошая база. Ребята на площадке знают свое дело, менеджера отзывчивы к любым вопросам, любой товар находят в кратчайшие сроки. Цены адекватные. Из недостатков - некрытая площадка, но это больше неудобство для самих работников. В целом ОЧЕНЬ даже рекомендую!!!"
 							</div>
 							<div class="buybutton pointer" data-toggle="modal" data-target="#nowModal">Заказать сейчас</div>
 						</div>
@@ -96,8 +96,8 @@
 			</div>
 			<div class="col-md-7">
 				<div class="whyus__img">
-					<video poster="/path/to/poster.jpg" class="player" playsinline autoplay loop>
-					  <source src="<?php bloginfo('template_url'); ?>/videos/video1.mp4" type="video/mp4">
+					<video poster="/path/to/poster.jpg" class="player" loop>
+					  <source src="<?php bloginfo('template_url'); ?>/videos/video3.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
 				</div>
@@ -106,8 +106,8 @@
 		<div class="row align-items-center mb-5 pt-5">
 			<div class="col-md-7">
 				<div class="whyus__img">
-					<video poster="/path/to/poster.jpg" class="player" playsinline autoplay loop>
-					  <source src="<?php bloginfo('template_url'); ?>/videos/video1.mp4" type="video/mp4">
+					<video poster="/path/to/poster.jpg" class="player"  loop>
+					  <source src="<?php bloginfo('template_url'); ?>/videos/porezka.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
 				</div>
@@ -120,21 +120,21 @@
 			      data-from="1"
 			      data-to="0"
 			      data-easing="easeinout"
-			      data-translatey="80"
+			      data-translatey="150"
 			    >
 						<div class="whyus__text mb-5">
 							<div class="whyus__text-title mb-4">
-								<img src="<?php bloginfo('template_url'); ?>/img/delivery-truck.svg" alt="" width="30px">
-								Организовываем срочную доставку
+								<img src="<?php bloginfo('template_url'); ?>/img/saw-blade.svg" alt="" width="30px">
+								Порезка
 							</div>
 							<div class="whyus__text-description lead">
-								Мы оперативно доставим любое необходимое количество арматуры по указанному вами адресу.
+								Бесплатная порезка даже для мелких заказов. У нас имеется полный набор инструментов для порезки. 
 							</div>
 						</div>
 						<div class="whyus__review">
 							<div class="whyus__review-user mb-4">
 								<div class="whyus__review-avatar">
-									<img src="https://static.youdo.com/i/vpromo-landing/execs/3065257.jpg" alt="" class="rounded-circle mr-3">
+									<img src="<?php bloginfo('template_url'); ?>/img/ava-3.jpeg" alt="" class="rounded-circle mr-3">
 								</div>
 								<div class="whyus__review-name">
 									Николай
@@ -144,7 +144,7 @@
 								</div>	
 							</div>
 							<div class="whyus__review-text pt-4 mb-5">
-								"Подтверждаю! Нужно было срочно доставить большой объем арматуры. Утром заказал, после обеда уже все было доставлено!"
+								"Все супер, впечатления только хорошие. Буду и дальше сюда обращаться, спасибо!"
 							</div>
 							<div class="buybutton pointer" data-toggle="modal" data-target="#nowModal">Заказать сейчас</div>
 						</div>
@@ -161,7 +161,105 @@
 			      data-from="1"
 			      data-to="0"
 			      data-easing="easeinout"
-			      data-translatey="80"
+			      data-translatey="150"
+			    >
+						<div class="whyus__text mb-5">
+							<div class="whyus__text-title mb-4">
+								<img src="<?php bloginfo('template_url'); ?>/img/delivery-truck.svg" alt="" width="30px">
+								Доставка груза
+							</div>
+							<div class="whyus__text-description lead">
+								Мы оперативно доставим любое необходимое количество арматуры по указанному вами адресу.
+							</div>
+						</div>
+						<div class="whyus__review">
+							<div class="whyus__review-user mb-4">
+								<div class="whyus__review-avatar">
+									<img src="<?php bloginfo('template_url'); ?>/img/ava-4.jpeg" alt="" class="rounded-circle mr-3">
+								</div>
+								<div class="whyus__review-name">
+									Иван
+								</div>
+								<div class="whyus__review-who">
+									Купил 120 кг
+								</div>	
+							</div>
+							<div class="whyus__review-text pt-4 mb-5">
+								"Спасибо огромное ребятам,приехал под закрытие склада,ребята не отказали,бысто сформировали заказ и загрузили,еще и скидку в придачу дали!!!)очень доволен!!!Буду всем рекомендовать вас"
+							</div>
+							<div class="buybutton pointer" data-toggle="modal" data-target="#nowModal">Заказать сейчас</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7">
+				<div class="whyus__img">
+					<video poster="/path/to/poster.jpg" class="player" loop>
+					  <source src="<?php bloginfo('template_url'); ?>/videos/video5.mp4" type="video/mp4">
+					  <source src="/path/to/video.webm" type="video/webm">
+					</video>	
+				</div>
+			</div>
+		</div>
+		<div class="row align-items-center mb-5 pt-5">
+			<div class="col-md-7">
+				<div class="whyus__img">
+					<video poster="/path/to/poster.jpg" class="player" loop>
+					  <source src="<?php bloginfo('template_url'); ?>/videos/video6.mp4" type="video/mp4">
+					  <source src="/path/to/video.webm" type="video/webm">
+					</video>	
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="scrollme">
+					<div 
+			      class="animateme"
+			      data-when="enter"
+			      data-from="1"
+			      data-to="0"
+			      data-easing="easeinout"
+			      data-translatey="150"
+			    >
+						<div class="whyus__text mb-5">
+							<div class="whyus__text-title mb-4">
+								<img src="<?php bloginfo('template_url'); ?>/img/operator.svg" alt="" width="30px">
+								Индивидуальный подход
+							</div>
+							<div class="whyus__text-description lead">
+								Наши специалисты проконсультируют и помогут выбрать то, что Вам нужно. Мы организовываем полное сопровождение на всех этапах заказа. 
+							</div>
+						</div>
+						<div class="whyus__review">
+							<div class="whyus__review-user mb-4">
+								<div class="whyus__review-avatar">
+									<img src="<?php bloginfo('template_url'); ?>/img/ava-5.jpeg" alt="" class="rounded-circle mr-3">
+								</div>
+								<div class="whyus__review-name">
+									Людмила
+								</div>
+								<div class="whyus__review-who">
+									Купила 55 кг
+								</div>	
+							</div>
+							<div class="whyus__review-text pt-4 mb-5">
+								"Спасибо парню за помощь, уже отчаялась с поиском трубы медной для водоподачи. Организованность и собранность парня меня удивило, когда сказал что достанем. Я поначалу даже не поверила, т.к после недели поиска многие только обещали. Спустя день и трубы я получила с доставкой к себе на адрес. Буду рекомендовать только Айрон и Вы будуте счастличкиком если попадете на менеджера Антона. Спасибо Вам. Буду только к вам обращаться"
+							</div>
+							<div class="buybutton pointer" data-toggle="modal" data-target="#nowModal">Заказать сейчас</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row align-items-center mb-5 pt-5">
+			<div class="col-md-5">
+				<div class="scrollme">
+					<div 
+			      class="animateme"
+			      data-when="enter"
+			      data-from="1"
+			      data-to="0"
+			      data-easing="easeinout"
+			      data-translatey="150"
 			    >
 						<div class="whyus__text mb-5">
 							<div class="whyus__text-title mb-4">
@@ -175,17 +273,17 @@
 						<div class="whyus__review">
 							<div class="whyus__review-user mb-4">
 								<div class="whyus__review-avatar">
-									<img src="https://static.youdo.com/i/vpromo-landing/execs/3065257.jpg" alt="" class="rounded-circle mr-3">
+									<img src="<?php bloginfo('template_url'); ?>/img/ava-6.jpg" alt="" class="rounded-circle mr-3">
 								</div>
 								<div class="whyus__review-name">
-									Святослав
+									Дмитрий
 								</div>
 								<div class="whyus__review-who">
 									Купил 120 кг
 								</div>	
 							</div>
 							<div class="whyus__review-text pt-4 mb-5">
-								"Являюсь регулярным покупателем. Никогда не подводили, поэтому продолжаю заказывать у них. Кроме того, компания дает хорошие скидки, за что отдельное спасибо)"
+								"Работаю с ребятами давно и не собираюсь менять партнеров!Все точно, качественно и в срок!Заказываю и в оговоренное время приезжает доставка! Точный вес,хорошие цены"
 							</div>
 							<div class="buybutton pointer" data-toggle="modal" data-target="#nowModal">Заказать сейчас</div>
 						</div>
@@ -194,7 +292,7 @@
 			</div>
 			<div class="col-md-7">
 				<div class="whyus__img">
-					<video poster="/path/to/poster.jpg" class="player" playsinline autoplay loop>
+					<video poster="/path/to/poster.jpg" class="player" loop>
 					  <source src="<?php bloginfo('template_url'); ?>/videos/video1.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
