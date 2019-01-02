@@ -8,7 +8,7 @@
 		<div class="row align-items-center mb-5">
 			<div class="col-md-7">
 				<div class="whyus__img">
-					<video poster="/path/to/poster.jpg" class="player" loop>
+					<video id="js-player" class="player1" muted loop>
 					  <source src="<?php bloginfo('template_url'); ?>/videos/video2.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
@@ -96,7 +96,7 @@
 			</div>
 			<div class="col-md-7">
 				<div class="whyus__img">
-					<video poster="/path/to/poster.jpg" class="player" loop>
+					<video class="player" autoplay muted loop>
 					  <source src="<?php bloginfo('template_url'); ?>/videos/video3.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
@@ -106,7 +106,7 @@
 		<div class="row align-items-center mb-5 pt-5">
 			<div class="col-md-7">
 				<div class="whyus__img">
-					<video poster="/path/to/poster.jpg" class="player"  loop>
+					<video class="player" autoplay muted loop>
 					  <source src="<?php bloginfo('template_url'); ?>/videos/porezka.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
@@ -194,7 +194,7 @@
 			</div>
 			<div class="col-md-7">
 				<div class="whyus__img">
-					<video poster="/path/to/poster.jpg" class="player" loop>
+					<video class="player" autoplay muted loop>
 					  <source src="<?php bloginfo('template_url'); ?>/videos/video5.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
@@ -204,7 +204,7 @@
 		<div class="row align-items-center mb-5 pt-5">
 			<div class="col-md-7">
 				<div class="whyus__img">
-					<video poster="/path/to/poster.jpg" class="player" loop>
+					<video class="player" autoplay muted loop>
 					  <source src="<?php bloginfo('template_url'); ?>/videos/video6.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
@@ -292,7 +292,7 @@
 			</div>
 			<div class="col-md-7">
 				<div class="whyus__img">
-					<video poster="/path/to/poster.jpg" class="player" loop>
+					<video class="player" autoplay muted loop>
 					  <source src="<?php bloginfo('template_url'); ?>/videos/video1.mp4" type="video/mp4">
 					  <source src="/path/to/video.webm" type="video/webm">
 					</video>	
