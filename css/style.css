@@ -10150,6 +10150,9 @@ h1 {
   .product .my-btn-black {
     margin-bottom: 1.5rem; }
 
+  #whyus .row.align-items-center:nth-of-type(2n+1) .buybutton {
+    margin-bottom: 3rem; }
+
   #timetobuy form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

@@ -35,14 +35,46 @@ $( document ).ready(function() {
     });
   };
 
+  console.log($('.playerone').height());
+
   $(window).scroll(function(event){
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    player1 = $('player').offset().top;
-    if (scrollTop > player1){
-      
+    playerOneTop = $('.playerone').offset().top - 195;
+    playerTwoTop = $('.playertwo').offset().top - 195;
+    playerThreeTop = $('.playerthree').offset().top - 195;
+    playerFourTop = $('.playerfour').offset().top - 195;
+    playerFiveTop = $('.playerfive').offset().top - 195;
+    playerSixTop = $('.playersix').offset().top - 195;
+    if (scrollTop > playerOneTop && scrollTop < (playerOneTop + $('.playerone').height())){
+      $('.playerone>video').get(0).play();
+    } else {
+      $('.playerone video').get(0).pause();
     }
-    // console.log(scrollTop);
-    // console.log($('player').offset().top);
+    if (scrollTop > playerTwoTop  && scrollTop < (playerTwoTop + $('.playertwo').height())){
+      $('.playertwo>video').get(0).play();
+    } else {
+      $('.playertwo video').get(0).pause();
+    }
+    if (scrollTop > playerThreeTop && scrollTop < (playerThreeTop + $('.playerthree').height())){
+      $('.playerthree>video').get(0).play();
+    } else {
+      $('.playerthree video').get(0).pause();
+    }
+    if (scrollTop > playerFourTop && scrollTop < (playerFourTop + $('.playerfour').height())){
+      $('.playerfour>video').get(0).play();
+    } else {
+      $('.playerfour video').get(0).pause();
+    }
+    if (scrollTop > playerFiveTop && scrollTop < (playerFiveTop + $('.playerfive').height())){
+      $('.playerfive>video').get(0).play();
+    } else {
+      $('.playerfive video').get(0).pause();
+    }
+    if (scrollTop > playerSixTop && scrollTop < (playerSixTop + $('.playersix').height())){
+      $('.playersix>video').get(0).play();
+    } else {
+      $('.playersix video').get(0).pause();
+    }
   });
 
   
