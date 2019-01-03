@@ -16,6 +16,16 @@ $( document ).ready(function() {
     }
   })
 
+  //Плавный скролл
+  $(document).on('click', '.left-menu a[href^="#"]', function (event) {
+    event.preventDefault();
+    var target = $($.attr(this, 'href'));
+    var targetScroll =  target.offset().top - 50
+    $('html, body').animate({
+        scrollTop: targetScroll
+    }, 500);
+  });
+
   //SWIPER STEPS
   if ($(document).width() > 960) {
     var mySwiperVideo = new Swiper ('.swiper-steps', {

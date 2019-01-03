@@ -55,9 +55,7 @@ function theme_name_scripts() {
     wp_enqueue_script( 'myscripts', get_template_directory_uri() . '/js/scripts.js','','',true);
     wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.min.js','','',true);
     wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/js/lightbox.min.js','','',true);
-    wp_enqueue_script( 'plyr', get_template_directory_uri() . '/js/plyr.min.js','','',true);
     wp_enqueue_script( 'scrollme', get_template_directory_uri() . '/js/scrollme.min.js','','',true);
-    wp_enqueue_script( 'vissense', get_template_directory_uri() . '/js/vissense.min.js','','',true);
 
     wp_localize_script( 'loadmore', 'loadmore_params', array(
         'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', 
@@ -106,11 +104,8 @@ function add_theme_menu_item() {
     add_menu_page("Theme Settings", "Theme Settings", "manage_options", "theme-settings", "theme_settings_page", null, 99);
     //register our settings
     register_setting( 'my-settings-group', 'facebook_link' );
-    register_setting( 'my-settings-group', 'twitter_link' );
-    register_setting( 'my-settings-group', 'google_link' );
-    register_setting( 'my-settings-group', 'pinterest_link' );
+    register_setting( 'my-settings-group', 'instagram_link' );
     register_setting( 'my-settings-group', 'google_analytics' );
-    register_setting( 'my-settings-group', 'jivosite_code' );
 }
 
 add_action("admin_menu", "add_theme_menu_item");

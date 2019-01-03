@@ -9730,7 +9730,8 @@ header {
     -webkit-border-radius: 16px;
     border-radius: 16px;
     -webkit-box-shadow: 10px 6px 16px 1px #00000047;
-    box-shadow: 10px 6px 16px 1px #00000047; }
+    box-shadow: 10px 6px 16px 1px #00000047;
+    cursor: pointer; }
   #products .product-title {
     font-size: 1.6rem;
     font-weight: 800; }
@@ -10026,7 +10027,6 @@ h1 {
   background-color: #2bb319;
   color: #ffffff; }
 
-/*@import 'plyr';*/
 @media (max-width: 760px) {
   .pc-show {
     display: none !important; }

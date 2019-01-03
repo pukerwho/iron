@@ -19,7 +19,7 @@
 				<div class="col-md-4 mb-5">
 					<div class="product">
 						<div class="product-img mb-5">
-							<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+							<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" data-toggle="modal" data-target="#ProductModal<?php the_id(); ?>">
 						</div>
 						<div class="product-title text-center mb-3">
 							<?php the_title(); ?>
@@ -60,6 +60,9 @@
         		<?php the_content(); ?>
         	</p>
         </div>
+        <div class="modal-footer">
+	        <a href="#" class="btn btn-primary">Скачать полный прайс можно здесь</a>
+	      </div>
       </div>
     </div>
   </div>

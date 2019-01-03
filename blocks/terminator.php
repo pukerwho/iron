@@ -17,19 +17,37 @@
 							<div class="d-flex align-items-center mb-5">
 								<i class="far fa-list-alt mr-5"></i>
 								<div class="terminator-item-text">
-									Скачай прайс
+									<a href="#">Прайс Арматура</a>
 								</div>	
 							</div>
 							<div class="d-flex align-items-center mb-5">
 								<i class="far fa-list-alt mr-5"></i>
 								<div class="terminator-item-text">
-									Скачай прайс
+									<a href="#">Прайс Круг</a>
 								</div>	
 							</div>
 							<div class="d-flex align-items-center mb-5">
 								<i class="far fa-list-alt mr-5"></i>
 								<div class="terminator-item-text">
-									Скачай прайс
+									<a href="#">Прайс Уголок</a>
+								</div>	
+							</div>
+							<div class="d-flex align-items-center mb-5">
+								<i class="far fa-list-alt mr-5"></i>
+								<div class="terminator-item-text">
+									<a href="#">Прайс Полоса</a>
+								</div>	
+							</div>
+							<div class="d-flex align-items-center mb-5">
+								<i class="far fa-list-alt mr-5"></i>
+								<div class="terminator-item-text">
+									<a href="#">Прайс Квадрат</a>
+								</div>	
+							</div>
+							<div class="d-flex align-items-center mb-5">
+								<i class="far fa-list-alt mr-5"></i>
+								<div class="terminator-item-text">
+									<a href="#">Прайс Труба</a>
 								</div>	
 							</div>
 						</div>
