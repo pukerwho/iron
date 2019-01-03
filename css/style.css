@@ -9820,6 +9820,12 @@ header {
     font-weight: 900; }
   #terminator .terminator-item-list {
     font-size: 2rem; }
+  #terminator .terminator-item-text a {
+    color: #ffffff;
+    font-size: 1.4rem; }
+    #terminator .terminator-item-text a:hover {
+      text-decoration: none;
+      color: #ffffff; }
 
 #timetobuy {
   position: relative;
