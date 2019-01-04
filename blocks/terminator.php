@@ -9,7 +9,7 @@
 							Найди дешевле
 						</div>
 						<div class="lead">
-							Получи скидку 10%
+							Получи скидку
 						</div>
 					</div>
 					<div class="terminator-item">

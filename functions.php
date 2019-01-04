@@ -192,9 +192,8 @@ function your_prefix_get_meta_box( $meta_boxes ) {
 }
 add_filter( 'rwmb_meta_boxes', 'your_prefix_get_meta_box' );
 
-
-function my_myme_types($mime_types){
-    $mime_types['xls'] = 'application/x-msexcel';
-    return $mime_types;
+function my_custom_upload_mimes($mimes = array()) {
+    $mimes['xls'] = "application/excel";
+    return $mimes;
 }
-add_filter('upload_mimes', 'my_myme_types', 1, 1);
+add_action('upload_mimes', 'my_custom_upload_mimes');
