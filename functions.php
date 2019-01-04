@@ -23,6 +23,7 @@ if( !isset( $content_width ) ) {
     // @TODO : edit the value for your own specifications
     $content_width = 960;
 }
+
 // Register menus, use wp_nav_menu() to display menu to your template ( cf : http://codex.wordpress.org/Function_Reference/wp_nav_menu )
 register_nav_menus( array(
     'main_menu' => __( 'Menu principal', 'minimal-blank-theme' ) //@TODO : change i18n domain name to yours
@@ -179,8 +180,21 @@ function your_prefix_get_meta_box( $meta_boxes ) {
             'type' => 'text',
             'name' => esc_html__( 'Цена', 'products-info' ),
           ),
+          array(
+            'id' => $prefix . 'product-price-link',
+            'type' => 'file_advanced',
+            'max_file_uploads' => 1,
+            'name' => esc_html__( 'Ссылка на прайс', 'products-info' ),
+          ),
         ),
     );
     return $meta_boxes;
 }
 add_filter( 'rwmb_meta_boxes', 'your_prefix_get_meta_box' );
+
+
+function my_myme_types($mime_types){
+    $mime_types['xls'] = 'application/x-msexcel';
+    return $mime_types;
+}
+add_filter('upload_mimes', 'my_myme_types', 1, 1);

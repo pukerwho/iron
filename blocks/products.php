@@ -61,7 +61,11 @@
         	</p>
         </div>
         <div class="modal-footer">
-	        <a href="#" class="btn btn-primary">Скачать полный прайс можно здесь</a>
+        	<?php 
+        		$files = rwmb_meta( 'meta-product-price-link', array( 'limit' => 1 ) );
+						$file = reset( $files );
+					?>
+	        <a href="<?php echo $file['url']; ?>" class="btn btn-primary">Скачать полный прайс можно здесь</a>
 	      </div>
       </div>
     </div>

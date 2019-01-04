@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1 class="mb-5">Арматура 10 за 8.37 грн/м</h1>
+				<h1 class="mb-5">Арматура 10 за 8.33 грн/м</h1>
 				<div class="lead mb-5">И другой металлопрокат по самым низким ценам в Харькове.
 					<span class="p-relative inline-block">
 						<span>Дешевле ты не найдешь.</span>
