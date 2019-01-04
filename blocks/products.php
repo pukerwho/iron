@@ -28,7 +28,7 @@
 							<?php echo rwmb_meta( 'meta-product-price' ); ?>
 						</div>
 						<div class="text-center">
-							<div class="my-btn-black text-uppercase pointer">
+							<div class="my-btn-black text-uppercase pointer" data-toggle="modal" data-target="#ProductModalOrder<?php the_id(); ?>">
 								Заказать
 							</div>
 							<div class="my-btn-black text-uppercase pointer" data-toggle="modal" data-target="#ProductModal<?php the_id(); ?>">
@@ -42,6 +42,7 @@
 	</div>
 </section>
 
+<!-- Модальное окно Подробнее -->
 <?php 
   $custom_query = new WP_Query( array( 'post_type' => 'products', 'orderby' => 'menu_order' ) );
   if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
@@ -50,7 +51,7 @@
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel"><?php the_title(); ?></h5>
+        	<h5 class="modal-title" id="exampleModalLabel"><?php the_title(); ?></h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -67,6 +68,28 @@
 					?>
 	        <a href="<?php echo $file['url']; ?>" class="btn btn-primary">Скачать полный прайс можно здесь</a>
 	      </div>
+      </div>
+    </div>
+  </div>
+<?php endwhile; endif; ?>
+
+<!-- Модальное окно Заказать -->
+<?php 
+  $custom_query = new WP_Query( array( 'post_type' => 'products', 'orderby' => 'menu_order' ) );
+  if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
+	<!-- Product Modal -->
+  <div class="modal fade" id="ProductModalOrder<?php the_id(); ?>" tabindex="-1" role="dialog" aria-labelledby="ProductLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Заказ: <?php the_title(); ?></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        	<?php echo do_shortcode(''.rwmb_meta( "meta-product_contact_form").''); ?>
+        </div>
       </div>
     </div>
   </div>

@@ -186,6 +186,11 @@ function your_prefix_get_meta_box( $meta_boxes ) {
             'max_file_uploads' => 1,
             'name' => esc_html__( 'Ссылка на прайс', 'products-info' ),
           ),
+          array(
+            'id' => $prefix . 'product_contact_form',
+            'type' => 'text',
+            'name' => esc_html__( 'Код формы-заявки', 'products-info' ),
+          ),
         ),
     );
     return $meta_boxes;
