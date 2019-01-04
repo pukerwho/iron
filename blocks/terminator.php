@@ -17,37 +17,37 @@
 							<div class="d-flex align-items-center mb-5">
 								<i class="far fa-list-alt mr-5"></i>
 								<div class="terminator-item-text">
-									<a href="#">Прайс Арматура</a>
+									<a href="<?php bloginfo('template_url'); ?>/files/price_armatura.xls" download>Прайс Арматура</a>
 								</div>	
 							</div>
 							<div class="d-flex align-items-center mb-5">
 								<i class="far fa-list-alt mr-5"></i>
 								<div class="terminator-item-text">
-									<a href="#">Прайс Круг</a>
+									<a href="<?php bloginfo('template_url'); ?>/files/price_krug.xls" download>Прайс Круг</a>
 								</div>	
 							</div>
 							<div class="d-flex align-items-center mb-5">
 								<i class="far fa-list-alt mr-5"></i>
 								<div class="terminator-item-text">
-									<a href="#">Прайс Уголок</a>
+									<a href="<?php bloginfo('template_url'); ?>/files/price_ugolok.xls" download>Прайс Уголок</a>
 								</div>	
 							</div>
 							<div class="d-flex align-items-center mb-5">
 								<i class="far fa-list-alt mr-5"></i>
 								<div class="terminator-item-text">
-									<a href="#">Прайс Полоса</a>
+									<a href="<?php bloginfo('template_url'); ?>/files/price_polosa.xls" download>Прайс Полоса</a>
 								</div>	
 							</div>
 							<div class="d-flex align-items-center mb-5">
 								<i class="far fa-list-alt mr-5"></i>
 								<div class="terminator-item-text">
-									<a href="#">Прайс Квадрат</a>
+									<a href="<?php bloginfo('template_url'); ?>/files/price_kvadrat.xls" download>Прайс Квадрат</a>
 								</div>	
 							</div>
 							<div class="d-flex align-items-center mb-5">
 								<i class="far fa-list-alt mr-5"></i>
 								<div class="terminator-item-text">
-									<a href="#">Прайс Труба</a>
+									<a href="<?php bloginfo('template_url'); ?>/files/price_truba.xls" download>Прайс Труба</a>
 								</div>	
 							</div>
 						</div>
