@@ -45,6 +45,16 @@ $( document ).ready(function() {
     });
   };
 
+  var mySwiperProductPrice = new Swiper ('.swiper-product_price', {
+    slidesPerView: 1,
+    loop: true,
+    autoHeight: true,
+    navigation: {
+      nextEl: '.swiper-product-price-button-next',
+      prevEl: '.swiper-product-price-button-prev',
+    },
+  });
+
   console.log($('.playerone').height());
 
   $(window).scroll(function(event){

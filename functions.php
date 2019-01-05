@@ -191,6 +191,11 @@ function your_prefix_get_meta_box( $meta_boxes ) {
             'type' => 'text',
             'name' => esc_html__( 'Код формы-заявки', 'products-info' ),
           ),
+          array(
+            'name'  => 'Фото-цены',
+            'id' => $prefix . 'product-photo-price',
+            'type' => 'image_advanced',
+          ),
         ),
     );
     return $meta_boxes;

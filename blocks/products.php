@@ -57,9 +57,18 @@
           </button>
         </div>
         <div class="modal-body">
-        	<p class="lead">
-        		<?php the_content(); ?>
-        	</p>
+      		<div class="swiper-container swiper-product_price">
+		    		<div class="swiper-wrapper">
+							<?php 
+								$images = rwmb_meta( 'meta-product-photo-price', array( 'size' => 'large' ) );
+								$title_img = get_the_title();
+								foreach ( $images as $image ) {
+							    echo '<div class="swiper-slide"><a href="', $image['full_url'], '" data-lightbox="', $title_img,'" data-title="', $title_img,'"><img src="', $image['url'], '"></a></div>';
+								} 
+							?>
+		    		</div>
+		    		<div class="swiper-button-next swiper-product-price-button-next"></div><div class="swiper-button-prev swiper-product-price-button-prev"></div>
+		    	</div>
         </div>
         <div class="modal-footer">
         	<?php 
