@@ -107,7 +107,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row align-items-center mb-5 pt-5">
+		<div class="row align-items-center mobile-column-reverse mb-5 pt-5">
 			<div class="col-md-7">
 				<div class="whyus__img">
 					<div class="playerthree">
@@ -118,7 +118,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-5">
+			<div class="col-md-5 mobile-mb-5">
 				<div class="scrollme">
 					<div 
 			      class="animateme"
@@ -209,7 +209,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row align-items-center mb-5 pt-5">
+		<div class="row align-items-center mobile-column-reverse mb-5">
 			<div class="col-md-7">
 				<div class="whyus__img">
 					<div class="playerfive">
@@ -220,7 +220,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-5">
+			<div class="col-md-5 mobile-mb-5">
 				<div class="scrollme">
 					<div 
 			      class="animateme"

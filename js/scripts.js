@@ -17,7 +17,7 @@ $( document ).ready(function() {
   })
 
   //Плавный скролл
-  $(document).on('click', '.left-menu a[href^="#"]', function (event) {
+  $(document).on('click', '#header a[href^="#"]', function (event) {
     event.preventDefault();
     var target = $($.attr(this, 'href'));
     var targetScroll =  target.offset().top - 50
@@ -44,7 +44,7 @@ $( document ).ready(function() {
       loop: false,
     });
   };
-  
+
 // $(document).on('click', '.show-product-price-modal', function(event){
 //   $('.show-product-price-modal').click(function (e) {
 //     $('.open-product-price-modal').on('show.bs.modal', function (e) {

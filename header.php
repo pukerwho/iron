@@ -44,7 +44,7 @@
             )); ?>
           </div>
           <div class="logo">
-            <img src="https://static.tildacdn.com/tild6364-3934-4430-a265-393536346164/iron-group-logo2.png" alt="">
+            <a href="#welcome"><img src="https://static.tildacdn.com/tild6364-3934-4430-a265-393536346164/iron-group-logo2.png" alt=""></a>
           </div>
           <div class="mobile-show p-absolute right-15">
             <div class="toogle-menu"></div>

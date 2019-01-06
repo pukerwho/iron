@@ -10170,6 +10170,16 @@ h1 {
     transition: transform 300ms ease;
     transition: transform 300ms ease, -webkit-transform 300ms ease; }
 
+  .mobile-column-reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+
+  .mobile-mb-5 {
+    margin-bottom: 3rem; }
+
   #cheap .col-md-6:first-of-type {
     margin-bottom: 3rem; }
 
