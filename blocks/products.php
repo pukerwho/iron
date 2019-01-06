@@ -57,12 +57,13 @@
           </button>
         </div>
         <div class="modal-body">
-      		<div class="photoalbum__grid">
+        	<div class="lead mb-3">Кликните на фото для увеличения</div>
+      		<div class="photoalbum-grid">
       			<?php 
 							$images = rwmb_meta( 'meta-product-photo-price', array( 'size' => 'large' ) );
 							$title_img = get_the_title();
 							foreach ( $images as $image ) {
-							    echo '<div class="hotel-photos__item"><a href="', $image['full_url'], '" data-lightbox="', $title_img,'" data-title="', $title_img,'"><img src="', $image['url'], '"></a></div>';
+							    echo '<div class="photoalbum-item"><a href="', $image['full_url'], '" data-lightbox="', $title_img,'" data-title="', $title_img,'"><img src="', $image['url'], '"></a></div>';
 							} 
 						?>
 					</div>
