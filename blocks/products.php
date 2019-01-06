@@ -19,7 +19,7 @@
 				<div class="col-md-4 mb-5">
 					<div class="product">
 						<div class="product-img mb-5">
-							<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" data-toggle="modal" data-target="#ProductModal<?php the_id(); ?>">
+							<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" data-toggle="modal" data-target="#ProductModal<?php the_id(); ?>" class="show-product-price-modal">
 						</div>
 						<div class="product-title text-center mb-3">
 							<?php the_title(); ?>
@@ -47,7 +47,7 @@
   $custom_query = new WP_Query( array( 'post_type' => 'products', 'orderby' => 'menu_order' ) );
   if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
 	<!-- Product Modal -->
-  <div class="modal fade" id="ProductModal<?php the_id(); ?>" tabindex="-1" role="dialog" aria-labelledby="ProductLabel" aria-hidden="true">
+  <div class="modal fade open-product-price-modal" id="ProductModal<?php the_id(); ?>" tabindex="-1" role="dialog" aria-labelledby="ProductLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -57,18 +57,15 @@
           </button>
         </div>
         <div class="modal-body">
-      		<div class="swiper-container swiper-product_price">
-		    		<div class="swiper-wrapper">
-							<?php 
-								$images = rwmb_meta( 'meta-product-photo-price', array( 'size' => 'large' ) );
-								$title_img = get_the_title();
-								foreach ( $images as $image ) {
-							    echo '<div class="swiper-slide"><a href="', $image['full_url'], '" data-lightbox="', $title_img,'" data-title="', $title_img,'"><img src="', $image['url'], '"></a></div>';
-								} 
-							?>
-		    		</div>
-		    		<div class="swiper-button-next swiper-product-price-button-next"></div><div class="swiper-button-prev swiper-product-price-button-prev"></div>
-		    	</div>
+      		<div class="photoalbum__grid">
+      			<?php 
+							$images = rwmb_meta( 'meta-product-photo-price', array( 'size' => 'large' ) );
+							$title_img = get_the_title();
+							foreach ( $images as $image ) {
+							    echo '<div class="hotel-photos__item"><a href="', $image['full_url'], '" data-lightbox="', $title_img,'" data-title="', $title_img,'"><img src="', $image['url'], '"></a></div>';
+							} 
+						?>
+					</div>
         </div>
         <div class="modal-footer">
         	<?php 

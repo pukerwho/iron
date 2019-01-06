@@ -44,16 +44,33 @@ $( document ).ready(function() {
       loop: false,
     });
   };
+  
+// $(document).on('click', '.show-product-price-modal', function(event){
+//   $('.show-product-price-modal').click(function (e) {
+//     $('.open-product-price-modal').on('show.bs.modal', function (e) {
+//       mySwiperProductPrice = new Swiper ('.swiper-product_price', {
+//         slidesPerView: 1,
+//         loop: true,
+//         simulateTouch: true,
+//         autoHeight: true,
+//         autoResize: false,
+//           resizeReInit: true,
+//         navigation: {
+//           nextEl: '.swiper-product-price-button-next',
+//           prevEl: '.swiper-product-price-button-prev',
+//         },
+//       });
+//     });
 
-  var mySwiperProductPrice = new Swiper ('.swiper-product_price', {
-    slidesPerView: 1,
-    loop: true,
-    autoHeight: true,
-    navigation: {
-      nextEl: '.swiper-product-price-button-next',
-      prevEl: '.swiper-product-price-button-prev',
-    },
-  });
+//     $('.open-product-price-modal').on('shown.bs.modal', function (e) {
+//       mySwiperProductPrice.update();
+//       console.log('update')
+//     });
+//   });
+// });
+  
+
+  
 
   console.log($('.playerone').height());
 
