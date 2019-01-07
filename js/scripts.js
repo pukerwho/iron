@@ -7,6 +7,12 @@ $( document ).ready(function() {
     $('.menu li').toggleClass('animate-left');
   });
 
+  $('.slide-menu a').on('click', function(e){
+    e.preventDefault;
+    $('.toogle-menu').removeClass('toogle-menu_active');
+    $('.slide-menu').removeClass('slide-menu_active');
+  })
+
   $(window).scroll(function(){
     var h_scroll = $(this).scrollTop();
     if (h_scroll > 50) {

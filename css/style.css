@@ -10169,6 +10169,8 @@ h1 {
     -o-transition: transform 300ms ease;
     transition: transform 300ms ease;
     transition: transform 300ms ease, -webkit-transform 300ms ease; }
+    .slide-menu_active a {
+      font-size: 2rem; }
 
   .mobile-column-reverse {
     -webkit-box-orient: vertical;
