@@ -5,6 +5,10 @@
   <?php settings_fields( 'my-settings-group' ); ?>
   <?php do_settings_sections( 'my-settings-group' ); ?>
 
+  <!-- <div class="nav-tab-wrapper">
+    <a href="#" class="nav-tab">Test1</a>
+    <a href="#" class="nav-tab">Тест 22</a>
+  </div> -->
   <table class="form-table">
     <tr valign="top">
     <th scope="row">Ссылка на Facebook</th>

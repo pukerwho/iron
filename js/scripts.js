@@ -48,6 +48,9 @@ $( document ).ready(function() {
       spaceBetween: 30,
       simulateTouch: true,
       loop: false,
+      pagination: {
+        el: '.swiper-pagination',
+      },
     });
   };
 

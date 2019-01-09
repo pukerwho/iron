@@ -44,7 +44,7 @@
 		<div class="row mobile-show">
 			<div class="col-md-12">
 				<div class="swiper-container swiper-steps">
-			    <div class="swiper-wrapper">
+			    <div class="swiper-wrapper mb-5">
 			    	<?php 
 	          $custom_query = new WP_Query( array( 'post_type' => 'steps', 'orderby' => 'menu_order' ) );
 	          if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
@@ -69,6 +69,8 @@
 	          	</div>
 	          <?php endwhile; endif; ?>
 			    </div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
 			  </div>
 			</div>
 		</div>
