@@ -9903,7 +9903,8 @@ header {
     -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 0px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 0px;
     padding: 15px 20px;
-    border: none; }
+    border: none;
+    cursor: pointer; }
   #timetobuy p {
     margin: 0;
     margin-right: 30px;
@@ -10053,8 +10054,8 @@ h1 {
   background-color: #2bb319;
   color: #ffffff; }
 
-div.wpcf7-validation-errors {
-  color: #ffffff; }
+.wpcf7-validation-errors {
+  color: #ffffff !important; }
 
 @media (max-width: 760px) {
   .pc-show {
