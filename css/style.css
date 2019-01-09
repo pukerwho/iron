@@ -9932,7 +9932,7 @@ header {
 
 #contact {
   background-color: #000000;
-  padding: 6rem 0rem; }
+  padding: 6rem 0 0 0; }
   #contact .contact-card {
     background-color: #ffffff;
     -webkit-border-radius: 16px;
@@ -9940,6 +9940,16 @@ header {
     padding: 2.5rem; }
   #contact .contact-title {
     font-size: 1.8rem; }
+  #contact .copyright {
+    color: #ffffff; }
+    #contact .copyright span {
+      opacity: 0.4; }
+    #contact .copyright a {
+      color: #ffffff;
+      opacity: 0.4; }
+      #contact .copyright a:hover {
+        opacity: 1;
+        text-decoration: none; }
 
 li {
   list-style-type: none; }
