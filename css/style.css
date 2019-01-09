@@ -10053,6 +10053,9 @@ h1 {
   background-color: #2bb319;
   color: #ffffff; }
 
+div.wpcf7-validation-errors {
+  color: #ffffff; }
+
 @media (max-width: 760px) {
   .pc-show {
     display: none !important; }
