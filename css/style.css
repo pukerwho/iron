@@ -9929,6 +9929,8 @@ header {
     /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );
     /* ie6-9 */ }
+  #timetobuy .wpcf7-validation-errors {
+    color: #ffffff !important; }
 
 #contact {
   background-color: #000000;
@@ -10063,9 +10065,6 @@ h1 {
   width: 100%;
   background-color: #2bb319;
   color: #ffffff; }
-
-.wpcf7-validation-errors {
-  color: #ffffff !important; }
 
 @media (max-width: 760px) {
   .pc-show {
